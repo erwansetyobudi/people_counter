@@ -101,4 +101,6 @@ Developed by Erwan Setyo Budi
 ## Preview
 
 ![preview](https://github.com/user-attachments/assets/0e53b434-ec36-48e6-8ea9-b0b911093e73)
+![image](https://github.com/user-attachments/assets/a5c0cffd-e1f1-45a2-84c6-e5ac304138f9)
+
 
