@@ -97,3 +97,8 @@ MIT License – Silakan digunakan dan dimodifikasi sesuai kebutuhan.
 ## 👤 Author
 
 Developed by Erwan Setyo Budi
+
+## Preview
+
+![preview](https://github.com/user-attachments/assets/0e53b434-ec36-48e6-8ea9-b0b911093e73)
+
