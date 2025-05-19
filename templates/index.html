@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard Pengunjung</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f2f2f2;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .counter {
+            font-size: 20px;
+            margin: 10px;
+        }
+        .video {
+            display: inline-block;
+            border: 2px solid #555;
+            margin: 20px 0;
+        }
+        .chart {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>📊 Dashboard Pengunjung Perpustakaan</h1>
+    <div class="counter">👣 Orang Masuk: <strong>{{ masuk }}</strong></div>
+    <div class="counter">🚪 Orang Keluar: <strong>{{ keluar }}</strong></div>
+
+    <div class="video">
+        <img src="{{ url_for('video_feed') }}" width="600">
+    </div>
+
+    <div class="chart">
+        <h2>📈 Grafik Kunjungan Hari Ini</h2>
+        <img src="{{ url_for('static', filename='chart.png') }}" width="700" alt="Grafik Harian">
+    </div>
+    <div style="margin-top: 30px;">
+    <form action="/reset_log" method="get" style="display:inline-block; margin-right: 10px;">
+        <button type="submit">🔄 Reset Data Hari Ini</button>
+    </form>
+    <form action="/generate_dummy" method="get" style="display:inline-block;">
+        <button type="submit">🧪 Generate Dummy Data</button>
+    </form>
+    <form action="/download_excel" method="get" style="margin-top: 10px;">
+    <button type="submit">📥 Download Data Excel</button>
+    </form>
+
+</div>
+
+</body>
+</html>
